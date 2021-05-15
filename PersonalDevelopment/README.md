@@ -2,7 +2,7 @@ A. Framework Highlights:
 
 - This is a page object model framework created using Selenium, Specflow & C#. 
 - The framework is capable of running tests on real browsers as well as in headless mode. It also supports cross browser testing (Chrome & Edge at the moment). 
-- The framework also has a function to capture screenshots of the page where the test fails.
+- The framework also has a function to capture screenshots of the page where the test fails. The screenshot folder can be accessed from ../bin/Debug directory.
 
 
 B. Framework Description:
