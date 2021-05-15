@@ -26,11 +26,19 @@ The framework is seggregated into various parts (explained below) for better und
 8. DriverFactory - This contains the logic for running tests in real browser or headless mode. It also contains logic for driver timeout & maximize while running tests in real browser mode.
 
 
-C. Pre-requisites:
+C. Pre-requisites & Getting Started:
 
-1. Install Microsoft visual studio 2019 (community edition will do)
+1. Download the edge driver version supported by your browser. Create a folder called "MicrosoftWebDriver" under "C:\Users\yourusername\AppData\Local\Temp" & add the edge driver version in this folder for the web browser to initiate. Make sure you name it as "MicrosoftWebDriver.exe"
 
-2. Install SpecFlow for visual studio
+2. Download the chrome driver version supported by your browser. Create a folder called "chromedriver" under "C:\Users\yourusername\AppData\Local\Temp" & add the chrome driver version in this folder for the web browser to initiate. Make sure you name it as "chromedriver.exe"
+
+3. Install Microsoft visual studio 2019 (community edition will do)
+
+4. Install SpecFlow for visual studio
+
+5. Clone the bitbucket repo to your local machine
+
+6. Open the .sln file using visual studio 2019
 
 
 D. Running Tests on Chrome:
