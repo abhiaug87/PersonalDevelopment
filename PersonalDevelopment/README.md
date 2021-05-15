@@ -28,7 +28,7 @@ The framework is seggregated into various parts (explained below) for better und
 
 C. Pre-requisites:
 
-1. Install Microsoft visual studio (community edition will do)
+1. Install Microsoft visual studio 2019 (community edition will do)
 
 2. Install SpecFlow for visual studio
 
@@ -39,7 +39,7 @@ D. Running Tests on Chrome:
 
 2. Create a folder called "chromedriver" under "C:\Users\yourusername\AppData\Local\Temp" & add the chrome driver version supported by your browser in this folder for the web browser to initiate. Make sure you name it as "chromedriver.exe"
 
-3. Right click on TestRestrictionsUI (7) in test explorer & click Run
+3. Right click on PersonalDevelopment (7) in test explorer & click Run
 
 
 E. Running Tests on Edge:
@@ -48,14 +48,14 @@ E. Running Tests on Edge:
 
 2. Create a folder called "MicrosoftWebDriver" under "C:\Users\yourusername\AppData\Local\Temp" & add the chrome driver version supported by your browser in this folder for the web browser to initiate. Make sure you name it as "MicrosoftWebDriver.exe"
 
-3. Right click on TestRestrictionsUI (7) in test explorer & click Run
+3. Right click on PersonalDevelopment (7) in test explorer & click Run
 
 
 F. Running Tests in Headless Mode:
 
 1. Add the tag @Headless in SpecFlow on top of scenario every scenario. This is because specflow does not support feature level tags (https://github.com/SpecFlowOSS/SpecFlow/issues/2024)
 
-2. Right click on TestRestrictionsUI (7) in test explorer & click Run
+2. Right click on PersonalDevelopment (7) in test explorer & click Run
 
 
 G. Troubleshooting:
