@@ -68,8 +68,15 @@ F. Running Tests in Headless Mode:
 
 G. Troubleshooting:
 
+If the webdriver does not start for some reason & the tests timeout in a few milliseconds:
+
 Option 1:
-- If the webdriver does not start for some reason, delete the .exe file from your 'Temp' folder & paste the .exe file again from another folder. Then run the test again. 
+-  Close Visual Studio 2019 & close the project folder on your machine. Then open the project folder again & open the .sln file with Visual Studio 2019.
 
 Option 2:
-- Restart the machine. Then open the project, clean the solution & run the tests again. 
+-  Delete the .exe file from your 'Temp' folder & paste the .exe file again from another folder. Then run the tests again.  
+
+Option 3:
+- Restart the machine. Open the project, clean the solution & run the tests again.
+
+NB: Please try Option 1 first. If it does not work, then try either Option 2 or Option 3.
