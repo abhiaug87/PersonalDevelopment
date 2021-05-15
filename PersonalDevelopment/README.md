@@ -60,5 +60,8 @@ F. Running Tests in Headless Mode:
 
 G. Troubleshooting:
 
+Option 1:
 - If the webdriver does not start for some reason, delete the .exe file from your 'Temp' folder & paste the .exe file again from another folder. Then run the test again. 
+
+Option 2:
 - Restart the machine. Then open the project, clean the solution & run the tests again. 
