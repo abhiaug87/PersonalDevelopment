@@ -21,14 +21,14 @@ namespace PersonalDevelopment.Steps
         [Given(@"I am on the login page")]
         public void GivenIAmOnTheLoginPage()
         {
-            Driver.Navigate().GoToUrl(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "url"));
-            Assert.IsTrue(po.username.GetAttribute("placeholder").Contains(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "usernametxt")), "Text does not match as expected");
-            po.username.SendKeys(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "username"));
-            Assert.IsTrue(po.cont.Text.Contains(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "continue")), "Text does not match as expected");
+            Driver.Navigate().GoToUrl(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "url"));
+            Assert.IsTrue(po.username.GetAttribute("placeholder").Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "usernametxt")), "Text does not match as expected");
+            po.username.SendKeys(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "username"));
+            Assert.IsTrue(po.cont.Text.Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "continue")), "Text does not match as expected");
             po.cont.Click();
-            Assert.IsTrue(po.password.GetAttribute("placeholder").Contains(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "passtxt")), "Text does not match as expected");
-            po.password.SendKeys(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "password"));
-            Assert.IsTrue(po.login.Text.Contains(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "login")), "Text does not match as expected");
+            Assert.IsTrue(po.password.GetAttribute("placeholder").Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "passtxt")), "Text does not match as expected");
+            po.password.SendKeys(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "password"));
+            Assert.IsTrue(po.login.Text.Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "login")), "Text does not match as expected");
             po.login.Click();
         }
 
@@ -36,20 +36,20 @@ namespace PersonalDevelopment.Steps
         public void WhenIClickOnTheConfluenceLink()
         {
             po.confluence.Click();
-            Assert.IsTrue(po.confluence.Text.Contains(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "confluence")));
-            Assert.IsTrue(po.home.Text.Contains(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "home")));
+            Assert.IsTrue(po.confluence.Text.Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "confluence")));
+            Assert.IsTrue(po.home.Text.Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "home")));
         }
 
         [Given(@"I am redirected to the Home page")]
         public void ThenIAmRedirectedToTheHomePage()
         {
-            Assert.IsTrue(po.home.Text.Contains(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "home")));
+            Assert.IsTrue(po.home.Text.Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "home")));
         }
 
         [When(@"I click on my space")]
         public void WhenIClickOnMySpace()
         {
-            Assert.IsTrue(po.space.Text.Contains(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "space")));
+            Assert.IsTrue(po.space.Text.Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "space")));
             po.space.Click();
         }
 
@@ -57,7 +57,7 @@ namespace PersonalDevelopment.Steps
         [Then(@"I am redirected to the Overview page")]
         public void ThenIAmRedirectedToTheOverviewPage()
         {
-            Assert.IsTrue(po.overview.Text.Contains(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "overview")));
+            Assert.IsTrue(po.overview.Text.Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "overview")));
         }
 
         [When(@"I navigate to the restrictions page")]
@@ -65,7 +65,7 @@ namespace PersonalDevelopment.Steps
         {
             Sleep(2);
             po.restrictionsmenu.Click();
-            Assert.IsTrue(po.restrictionstxt.Text.Contains(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "restrictions")));
+            Assert.IsTrue(po.restrictionstxt.Text.Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "restrictions")));
             po.restrictionstxt.Click();
         }
 
@@ -76,7 +76,7 @@ namespace PersonalDevelopment.Steps
             Actions action = new Actions(Driver);
             Actions hover = action.MoveToElement(po.restrictionstxt1).Click().SendKeys(Keys.ArrowUp + Keys.ArrowUp + Keys.Enter);
             hover.Build().Perform();
-            Assert.IsTrue(po.apply.GetAttribute("innerHTML").Contains(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "apply")));
+            Assert.IsTrue(po.apply.GetAttribute("innerHTML").Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "apply")));
             wait.Until(Driver => Driver.FindElement(By.XPath("//*[@id='com-atlassian-confluence']/div[2]/div[3]/div/div[3]/div[2]/div/div/div[2]/footer/div/div[2]/button/span/span")));
             po.apply.Click();
             Sleep(2);
@@ -149,7 +149,7 @@ namespace PersonalDevelopment.Steps
         [When(@"I click the cancel button")]
         public void WhenIClickTheCancelButton()
         {
-            Assert.IsTrue(po.cancelbtn.GetAttribute("innerHTML").Contains(read.jsonReader("../TestRestrictionsUI/Data/TestData.json", "cancel")));
+            Assert.IsTrue(po.cancelbtn.GetAttribute("innerHTML").Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "cancel")));
             po.cancelbtn.Click();
         }
 
