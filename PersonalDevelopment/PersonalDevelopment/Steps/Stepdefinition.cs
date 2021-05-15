@@ -156,6 +156,7 @@ namespace PersonalDevelopment.Steps
         [When(@"I click on the remove button")]
         public void WhenIClickOnTheRemoveButton()
         {
+            Assert.IsTrue(po.remove.GetAttribute("innerHTML").Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "remove")));
             po.remove.Click();
             po.apply.Click();
         }
