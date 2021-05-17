@@ -71,11 +71,11 @@ namespace PersonalDevelopment.Scenarios
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Login to Confluence & go to Overview page")]
-        [NUnit.Framework.CategoryAttribute("Headless")]
+        [NUnit.Framework.CategoryAttribute("Chrome")]
         public virtual void LoginToConfluenceGoToOverviewPage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login to Confluence & go to Overview page", null, new string[] {
-                        "Headless"});
+                        "Chrome"});
 #line 4
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -93,11 +93,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Cancel out of the Restrictions page")]
-        [NUnit.Framework.CategoryAttribute("Headless")]
+        [NUnit.Framework.CategoryAttribute("Chrome")]
         public virtual void CancelOutOfTheRestrictionsPage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cancel out of the Restrictions page", null, new string[] {
-                        "Headless"});
+                        "Chrome"});
 #line 11
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -121,11 +121,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Add restriction - anyone can view & edit")]
-        [NUnit.Framework.CategoryAttribute("Headless")]
+        [NUnit.Framework.CategoryAttribute("Chrome")]
         public virtual void AddRestriction_AnyoneCanViewEdit()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add restriction - anyone can view & edit", null, new string[] {
-                        "Headless"});
+                        "Chrome"});
 #line 21
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -149,11 +149,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Add restriction - anyone can view & some can edit")]
-        [NUnit.Framework.CategoryAttribute("Headless")]
+        [NUnit.Framework.CategoryAttribute("Chrome")]
         public virtual void AddRestriction_AnyoneCanViewSomeCanEdit()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add restriction - anyone can view & some can edit", null, new string[] {
-                        "Headless"});
+                        "Chrome"});
 #line 31
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -179,11 +179,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Delete user - anyone can view & some can edit restriction")]
-        [NUnit.Framework.CategoryAttribute("Headless")]
+        [NUnit.Framework.CategoryAttribute("Chrome")]
         public virtual void DeleteUser_AnyoneCanViewSomeCanEditRestriction()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete user - anyone can view & some can edit restriction", null, new string[] {
-                        "Headless"});
+                        "Chrome"});
 #line 42
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -208,12 +208,12 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Modify restriction after adding user - specific people can view or edit restricti" +
             "on")]
-        [NUnit.Framework.CategoryAttribute("Headless")]
+        [NUnit.Framework.CategoryAttribute("Chrome")]
         public virtual void ModifyRestrictionAfterAddingUser_SpecificPeopleCanViewOrEditRestriction()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Modify restriction after adding user - specific people can view or edit restricti" +
                     "on", null, new string[] {
-                        "Headless"});
+                        "Chrome"});
 #line 52
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -241,11 +241,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Remove user - specific people can view or edit restriction")]
-        [NUnit.Framework.CategoryAttribute("Headless")]
+        [NUnit.Framework.CategoryAttribute("Chrome")]
         public virtual void RemoveUser_SpecificPeopleCanViewOrEditRestriction()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Remove user - specific people can view or edit restriction", null, new string[] {
-                        "Headless"});
+                        "Chrome"});
 #line 64
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();

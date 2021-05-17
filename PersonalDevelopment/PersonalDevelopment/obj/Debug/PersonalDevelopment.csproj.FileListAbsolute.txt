@@ -29,3 +29,4 @@ C:\Users\abhishek.kulkarni\My Folder\Practice\PersonalDevelopment\PersonalDevelo
 C:\Users\abhishek.kulkarni\My Folder\Practice\PersonalDevelopment\PersonalDevelopment\PersonalDevelopment\obj\Debug\PersonalDevelopment.csproj.CopyComplete
 C:\Users\abhishek.kulkarni\My Folder\Practice\PersonalDevelopment\PersonalDevelopment\PersonalDevelopment\obj\Debug\PersonalDevelopment.dll
 C:\Users\abhishek.kulkarni\My Folder\Practice\PersonalDevelopment\PersonalDevelopment\PersonalDevelopment\obj\Debug\PersonalDevelopment.pdb
+C:\Users\abhishek.kulkarni\My Folder\Practice\PersonalDevelopment\PersonalDevelopment\PersonalDevelopment\obj\Debug\PersonalDevelopment.csprojAssemblyReference.cache
