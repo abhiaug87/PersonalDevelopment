@@ -70,12 +70,12 @@ namespace PersonalDevelopment.Scenarios
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Login to Confluence & go to Overview page")]
-        [NUnit.Framework.CategoryAttribute("Chrome")]
-        public virtual void LoginToConfluenceGoToOverviewPage()
+        [NUnit.Framework.DescriptionAttribute("Cancel out of the Restrictions page")]
+        [NUnit.Framework.CategoryAttribute("Headless")]
+        public virtual void CancelOutOfTheRestrictionsPage()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login to Confluence & go to Overview page", null, new string[] {
-                        "Chrome"});
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cancel out of the Restrictions page", null, new string[] {
+                        "Headless"});
 #line 4
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -86,34 +86,12 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
  testRunner.When("I click on my space", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 8
- testRunner.Then("I am redirected to the Overview page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Cancel out of the Restrictions page")]
-        [NUnit.Framework.CategoryAttribute("Chrome")]
-        public virtual void CancelOutOfTheRestrictionsPage()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cancel out of the Restrictions page", null, new string[] {
-                        "Chrome"});
-#line 11
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 12
- testRunner.Given("I am on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 13
- testRunner.And("I click on the Confluence link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 14
- testRunner.When("I click on my space", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 15
  testRunner.And("I am redirected to the Overview page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 16
+#line 9
  testRunner.And("I navigate to the restrictions page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 17
+#line 10
  testRunner.When("I click the cancel button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 18
+#line 11
  testRunner.Then("I am redirected to the Overview page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -121,27 +99,27 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Add restriction - anyone can view & edit")]
-        [NUnit.Framework.CategoryAttribute("Chrome")]
+        [NUnit.Framework.CategoryAttribute("Headless")]
         public virtual void AddRestriction_AnyoneCanViewEdit()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add restriction - anyone can view & edit", null, new string[] {
-                        "Chrome"});
-#line 21
+                        "Headless"});
+#line 14
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 22
+#line 15
  testRunner.Given("I am on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 23
+#line 16
  testRunner.And("I click on the Confluence link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 24
+#line 17
  testRunner.When("I click on my space", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 25
+#line 18
  testRunner.And("I am redirected to the Overview page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 26
+#line 19
  testRunner.And("I navigate to the restrictions page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 27
+#line 20
  testRunner.When("I choose the permission", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 28
+#line 21
  testRunner.Then("I am able to add the user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -149,29 +127,29 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Add restriction - anyone can view & some can edit")]
-        [NUnit.Framework.CategoryAttribute("Chrome")]
+        [NUnit.Framework.CategoryAttribute("Headless")]
         public virtual void AddRestriction_AnyoneCanViewSomeCanEdit()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add restriction - anyone can view & some can edit", null, new string[] {
-                        "Chrome"});
-#line 31
+                        "Headless"});
+#line 24
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 32
+#line 25
  testRunner.Given("I am on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 33
+#line 26
  testRunner.And("I click on the Confluence link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 34
+#line 27
  testRunner.When("I click on my space", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 35
+#line 28
  testRunner.And("I am redirected to the Overview page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 36
+#line 29
  testRunner.And("I navigate to the restrictions page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 37
+#line 30
  testRunner.When("I choose the permission for this scenario", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 38
+#line 31
  testRunner.And("I choose the user for this scenario", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 39
+#line 32
  testRunner.Then("I am able to add the user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -179,27 +157,27 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Delete user - anyone can view & some can edit restriction")]
-        [NUnit.Framework.CategoryAttribute("Chrome")]
+        [NUnit.Framework.CategoryAttribute("Headless")]
         public virtual void DeleteUser_AnyoneCanViewSomeCanEditRestriction()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete user - anyone can view & some can edit restriction", null, new string[] {
-                        "Chrome"});
-#line 42
+                        "Headless"});
+#line 35
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 43
+#line 36
  testRunner.Given("I am on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 44
+#line 37
  testRunner.And("I click on the Confluence link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 45
+#line 38
  testRunner.When("I click on my space", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 46
+#line 39
  testRunner.And("I am redirected to the Overview page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 47
+#line 40
  testRunner.And("I navigate to the restrictions page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 48
+#line 41
  testRunner.When("I click on the remove button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 49
+#line 42
  testRunner.Then("the user is removed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -208,32 +186,32 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Modify restriction after adding user - specific people can view or edit restricti" +
             "on")]
-        [NUnit.Framework.CategoryAttribute("Chrome")]
+        [NUnit.Framework.CategoryAttribute("Headless")]
         public virtual void ModifyRestrictionAfterAddingUser_SpecificPeopleCanViewOrEditRestriction()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Modify restriction after adding user - specific people can view or edit restricti" +
                     "on", null, new string[] {
-                        "Chrome"});
-#line 52
+                        "Headless"});
+#line 45
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 53
+#line 46
  testRunner.Given("I am on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 54
+#line 47
  testRunner.And("I click on the Confluence link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 55
+#line 48
  testRunner.When("I click on my space", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 56
+#line 49
  testRunner.And("I am redirected to the Overview page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 57
+#line 50
  testRunner.And("I navigate to the restrictions page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 58
+#line 51
  testRunner.When("I choose the permission to a specific user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 59
+#line 52
  testRunner.And("I choose the user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 60
+#line 53
  testRunner.And("click on edit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 61
+#line 54
  testRunner.Then("I am able to add the user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -241,27 +219,27 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Remove user - specific people can view or edit restriction")]
-        [NUnit.Framework.CategoryAttribute("Chrome")]
+        [NUnit.Framework.CategoryAttribute("Headless")]
         public virtual void RemoveUser_SpecificPeopleCanViewOrEditRestriction()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Remove user - specific people can view or edit restriction", null, new string[] {
-                        "Chrome"});
-#line 64
+                        "Headless"});
+#line 57
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 65
+#line 58
  testRunner.Given("I am on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 66
+#line 59
  testRunner.And("I click on the Confluence link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 67
+#line 60
  testRunner.When("I click on my space", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 68
+#line 61
  testRunner.And("I am redirected to the Overview page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 69
+#line 62
  testRunner.And("I navigate to the restrictions page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 70
+#line 63
  testRunner.When("I click on the remove button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 71
+#line 64
  testRunner.Then("the user is removed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

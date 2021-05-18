@@ -60,6 +60,7 @@ namespace PersonalDevelopment.Steps
             Assert.IsTrue(po.overview.Text.Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "overview")));
         }
 
+        [Then(@"I navigate to the restrictions page")]
         [When(@"I navigate to the restrictions page")]
         public void WhenINavigateToTheRestrictionsPage()
         {
@@ -82,6 +83,7 @@ namespace PersonalDevelopment.Steps
             Sleep(2);
         }
 
+        [Then(@"I choose the permission for this scenario")]
         [When(@"I choose the permission for this scenario")]
         public void WhenIChooseThePermissionForThisScenario()
         {
