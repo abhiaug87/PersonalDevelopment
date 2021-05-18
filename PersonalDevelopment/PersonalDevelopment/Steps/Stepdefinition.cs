@@ -18,8 +18,8 @@ namespace PersonalDevelopment.Steps
         JSON read = new JSON();
 
 
-        [Given(@"I am on the login page")]
-        public void GivenIAmOnTheLoginPage()
+        [Given(@"I have logged into Confluence")]
+        public void GivenIHaveLoggedIntoConfluence()
         {
             Driver.Navigate().GoToUrl(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "url"));
             Assert.IsTrue(po.username.GetAttribute("placeholder").Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "usernametxt")), "Text does not match as expected");
