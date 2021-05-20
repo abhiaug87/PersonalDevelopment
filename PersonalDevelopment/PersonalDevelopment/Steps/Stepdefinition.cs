@@ -80,7 +80,6 @@ namespace PersonalDevelopment.Steps
             Assert.IsTrue(po.apply.GetAttribute("innerHTML").Contains(read.jsonReader("../PersonalDevelopment/Data/TestData.json", "apply")));
             wait.Until(Driver => Driver.FindElement(By.XPath("//*[@id='com-atlassian-confluence']/div[2]/div[3]/div/div[3]/div[2]/div/div/div[2]/footer/div/div[2]/button/span/span")));
             po.apply.Click();
-            Sleep(2);
         }
 
         [Then(@"I choose the permission for this scenario")]
@@ -96,13 +95,11 @@ namespace PersonalDevelopment.Steps
         [When(@"I choose the user for this scenario")]
         public void WhenIChooseTheUserForThisScenario()
         {
-            Sleep(2);
-            Actions action = new Actions(Driver);
+           Actions action = new Actions(Driver);
             Actions select = action.MoveToElement(po.usergroup).MoveToElement(Driver.FindElement(By.XPath("//*[@id='com-atlassian-confluence']/div[2]/div[3]/div/div[3]/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[1]/div/div/div/div[1]"))).Click();
             select.Build().Perform();
             Actions keypress = action.MoveToElement(po.usergroup).SendKeys(Keys.Enter + Keys.Tab + Keys.Enter);
             keypress.Build().Perform();
-            Sleep(2);
             po.apply.Click();
         }
 
@@ -143,9 +140,7 @@ namespace PersonalDevelopment.Steps
         [Then(@"I am able to add the user")]
         public void ThenIAmAbleToAddTheUser()
         {
-            Sleep(2);
-            po.restrictionsmenu.Click();
-            po.restrictionstxt.Click();
+            WhenINavigateToTheRestrictionsPage();
         }
 
         [When(@"I click the cancel button")]
@@ -166,9 +161,7 @@ namespace PersonalDevelopment.Steps
         [Then(@"the user is removed")]
         public void ThenTheUserIsRemoved()
         {
-            Sleep(2);
-            po.restrictionsmenu.Click();
-            po.restrictionstxt.Click();
+            WhenINavigateToTheRestrictionsPage();
         }
 
 
