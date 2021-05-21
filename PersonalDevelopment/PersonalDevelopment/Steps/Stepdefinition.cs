@@ -95,7 +95,7 @@ namespace PersonalDevelopment.Steps
         [When(@"I choose the user for this scenario")]
         public void WhenIChooseTheUserForThisScenario()
         {
-           Actions action = new Actions(Driver);
+            Actions action = new Actions(Driver);
             Actions select = action.MoveToElement(po.usergroup).MoveToElement(Driver.FindElement(By.XPath("//*[@id='com-atlassian-confluence']/div[2]/div[3]/div/div[3]/div[2]/div/div/div[1]/div/div/div[2]/div/div/div[1]/div/div/div/div[1]"))).Click();
             select.Build().Perform();
             Actions keypress = action.MoveToElement(po.usergroup).SendKeys(Keys.Enter + Keys.Tab + Keys.Enter);
