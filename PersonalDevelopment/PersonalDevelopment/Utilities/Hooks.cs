@@ -21,7 +21,7 @@ namespace PersonalDevelopment.Utilities
         [BeforeTestRun]
         public static void InitializeReports()
         {
-            var reports = new ExtentHtmlReporter(@"C:\Users\abhishek.kulkarni\My Folder\Practice\PersonalDevelopment\PersonalDevelopment\PersonalDevelopment\Reports\");
+            var reports = new ExtentHtmlReporter(Path.Combine(NUnit.Framework.TestContext.CurrentContext.WorkDirectory + @"\\TestRunReport", "index.html"));
             reports.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
             htmlreport = new ExtentReports();
             htmlreport.AttachReporter(reports);
