@@ -71,11 +71,11 @@ namespace PersonalDevelopment.Scenarios
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Cancel out of the Restrictions page")]
-        [NUnit.Framework.CategoryAttribute("Headless")]
+        [NUnit.Framework.CategoryAttribute("Edge")]
         public virtual void CancelOutOfTheRestrictionsPage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cancel out of the Restrictions page", null, new string[] {
-                        "Headless"});
+                        "Edge"});
 #line 4
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();

@@ -21,7 +21,9 @@ The framework is seggregated into various parts (explained below) for better und
 
 6. Common Constants - This contains code for location of the browser drivers, names of the tags that are used in the SpecFlow file
 
-7. Hooks - This contains BeforeScenario & AfterScenrio functions that direct the test to perform actions before it starts & after it ends. Before starting the test checks whether it has to run the test has to run on a real browser or in headless mode depending on the tag mentioned on top of the scenario in the SpecFlow file. After the test is over, the framework captures images of any failed tests & then disposes the browser.
+7. Hooks 
+- This contains BeforeScenario & AfterScenrio functions that direct the test to perform actions before it starts & after it ends. Before starting the test checks whether it has to run the test has to run on a real browser or in headless mode depending on the tag mentioned on top of the scenario in the SpecFlow file. After the test is over, the framework captures images of any failed tests & then disposes the browser.
+- This also contains logic for reporting results of the test run using the BeforeFeature, AfterStep, InitializeReport & PublishReport functions.
 
 8. DriverFactory - This contains the logic for running tests in real browser or headless mode. It also contains logic for driver timeout & maximize while running tests in real browser mode.
 

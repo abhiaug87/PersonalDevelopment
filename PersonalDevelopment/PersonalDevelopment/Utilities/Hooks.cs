@@ -6,12 +6,47 @@ using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using System.IO;
 using OpenQA.Selenium.Support.Extensions;
+using AventStack.ExtentReports.Reporter;
+using AventStack.ExtentReports;
+using AventStack.ExtentReports.Gherkin.Model;
 
 namespace PersonalDevelopment.Utilities
 {
     [Binding]
     public class Hooks : BaseClass
     {
+        private static ExtentTest featurename, scenario;
+        private static ExtentReports htmlreport;
+
+        [BeforeTestRun]
+        public static void InitializeReports()
+        {
+            var reports = new ExtentHtmlReporter(@"C:\Users\abhishek.kulkarni\My Folder\Practice\PersonalDevelopment\PersonalDevelopment\PersonalDevelopment\Reports\");
+            reports.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
+            htmlreport = new ExtentReports();
+            htmlreport.AttachReporter(reports);
+
+        }
+
+        [AfterTestRun]
+        public static void PublishReports()
+        {
+            htmlreport.Flush();
+        }
+
+        [BeforeFeature]
+        public static void BeforeFeature()
+        {
+            featurename = htmlreport.CreateTest<Feature>(FeatureContext.Current.FeatureInfo.Title);
+
+        }
+
+        [AfterStep]
+        public static void AfterStep()
+        {
+            scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
+        }
+
         [BeforeScenario]
 
         public void BeforeScenario()
@@ -28,6 +63,7 @@ namespace PersonalDevelopment.Utilities
             {
                 Driver = DriverFactory.InitiateWebDriver(CommonConstants.DriverSettings.HeadlessBrowser);
             }
+            scenario = featurename.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
         }
 
         [AfterScenario]
