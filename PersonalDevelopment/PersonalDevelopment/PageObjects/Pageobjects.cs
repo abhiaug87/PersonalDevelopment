@@ -49,7 +49,7 @@ namespace PersonalDevelopment.PageObjects
         [FindsBy(How = How.XPath, Using = "div.fabric-user-picker__value-container.fabric-user-picker__value-container--is-multi.css-pspj7h")]
         public IWebElement selectuser;
 
-        [FindsBy(How = How.XPath, Using = "//*[@id='com-atlassian-confluence']/div[2]/div[3]/div/div[3]/div[2]/div/div/div[2]/footer/div/div[1]/button/span/span")]
+        [FindsBy(How = How.XPath, Using = "//*[@id='com-atlassian-confluence']/div[2]/div[3]/div/div[3]/div[2]/section/div/div[3]/div/div/div[1]/button/span/span")]
         public IWebElement cancelbtn;
 
         [FindsBy(How = How.CssSelector, Using = "div.css-4avucx-control")]
