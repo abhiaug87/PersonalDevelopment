@@ -99,11 +99,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Add restriction - anyone can view & edit")]
-        [NUnit.Framework.CategoryAttribute("Headless")]
+        [NUnit.Framework.CategoryAttribute("Edge")]
         public virtual void AddRestriction_AnyoneCanViewEdit()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add restriction - anyone can view & edit", null, new string[] {
-                        "Headless"});
+                        "Edge"});
 #line 14
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -127,11 +127,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Add restriction - anyone can view & some can edit")]
-        [NUnit.Framework.CategoryAttribute("Headless")]
+        [NUnit.Framework.CategoryAttribute("Edge")]
         public virtual void AddRestriction_AnyoneCanViewSomeCanEdit()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add restriction - anyone can view & some can edit", null, new string[] {
-                        "Headless"});
+                        "Edge"});
 #line 24
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -157,11 +157,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Delete user - anyone can view & some can edit restriction")]
-        [NUnit.Framework.CategoryAttribute("Headless")]
+        [NUnit.Framework.CategoryAttribute("Edge")]
         public virtual void DeleteUser_AnyoneCanViewSomeCanEditRestriction()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete user - anyone can view & some can edit restriction", null, new string[] {
-                        "Headless"});
+                        "Edge"});
 #line 35
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -186,12 +186,12 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Modify restriction after adding user - specific people can view or edit restricti" +
             "on")]
-        [NUnit.Framework.CategoryAttribute("Headless")]
+        [NUnit.Framework.CategoryAttribute("Edge")]
         public virtual void ModifyRestrictionAfterAddingUser_SpecificPeopleCanViewOrEditRestriction()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Modify restriction after adding user - specific people can view or edit restricti" +
                     "on", null, new string[] {
-                        "Headless"});
+                        "Edge"});
 #line 45
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -219,11 +219,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Remove user - specific people can view or edit restriction")]
-        [NUnit.Framework.CategoryAttribute("Headless")]
+        [NUnit.Framework.CategoryAttribute("Edge")]
         public virtual void RemoveUser_SpecificPeopleCanViewOrEditRestriction()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Remove user - specific people can view or edit restriction", null, new string[] {
-                        "Headless"});
+                        "Edge"});
 #line 57
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();

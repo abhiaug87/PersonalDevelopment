@@ -10,7 +10,7 @@ Scenario: Cancel out of the Restrictions page
 	When I click the cancel button
 	Then I am redirected to the Overview page
 
-@Headless
+@Edge
 Scenario: Add restriction - anyone can view & edit
 	Given I have logged into Confluence
 	And I click on the Confluence link
@@ -20,7 +20,7 @@ Scenario: Add restriction - anyone can view & edit
 	When I choose the permission
 	Then I am able to add the user
 
-@Headless
+@Edge
 Scenario: Add restriction - anyone can view & some can edit
 	Given I have logged into Confluence
 	And I click on the Confluence link
@@ -31,7 +31,7 @@ Scenario: Add restriction - anyone can view & some can edit
 	And I choose the user for this scenario
 	Then I am able to add the user
 
-@Headless
+@Edge
 Scenario: Delete user - anyone can view & some can edit restriction
 	Given I have logged into Confluence
 	And I click on the Confluence link
@@ -41,7 +41,7 @@ Scenario: Delete user - anyone can view & some can edit restriction
 	When I click on the remove button
 	Then the user is removed
 
-@Headless
+@Edge
 Scenario: Modify restriction after adding user - specific people can view or edit restriction
 	Given I have logged into Confluence
 	And I click on the Confluence link
@@ -53,7 +53,7 @@ Scenario: Modify restriction after adding user - specific people can view or edi
 	And click on edit
 	Then I am able to add the user
 
-@Headless
+@Edge
 Scenario: Remove user - specific people can view or edit restriction
 	Given I have logged into Confluence
 	And I click on the Confluence link

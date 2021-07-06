@@ -9,6 +9,7 @@ using OpenQA.Selenium.Support.Extensions;
 using AventStack.ExtentReports.Reporter;
 using AventStack.ExtentReports;
 using AventStack.ExtentReports.Gherkin.Model;
+using System.Reflection;
 
 namespace PersonalDevelopment.Utilities
 {
@@ -44,7 +45,26 @@ namespace PersonalDevelopment.Utilities
         [AfterStep]
         public static void AfterStep()
         {
-            scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
+            var step = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
+           
+            if (ScenarioContext.Current.TestError == null)
+            {
+                if (step == "Given")
+                    scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
+                else if (step == "When")
+                    scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text);
+                else if (step == "Then")
+                    scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text);
+            }
+            else if (ScenarioContext.Current.TestError != null)
+            {
+                if (step == "Given")
+                    scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.InnerException);
+                else if (step == "When")
+                    scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.InnerException);
+                else if (step == "Then")
+                    scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.InnerException);
+            }
         }
 
         [BeforeScenario]
