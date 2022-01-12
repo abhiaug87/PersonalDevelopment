@@ -92,7 +92,7 @@ namespace PersonalDevelopment.Utilities
             if (NUnit.Framework.TestContext.CurrentContext.Result.Outcome != ResultState.Success)
             {
                 string pathfile = Path.Combine(NUnit.Framework.TestContext.CurrentContext.WorkDirectory + @"\\Screenshot", "Screenshot.JPG" + "_" +
-                DateTime.Now.ToString("(dd_MMMM_hh_mm_ss_tt)"));
+                DateTime.Now.ToString("(dd_MMMM_hh_mm_ss_ffffff_tt)"));
                 var screenshot = Driver.TakeScreenshot();
                 screenshot.SaveAsFile(pathfile, ScreenshotImageFormat.Jpeg);
             }
